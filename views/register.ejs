@@ -23,6 +23,11 @@
             </div>
             <div class="form-group">
               <label for="password">Confirm Password</label>
+              <div class="error">
+                <% if(value) { %>
+                <%=value%>
+                <% } %>
+              </div>
               <input type="password" class="form-control" name="password2">
             </div>
             <button type="submit" class="btn btn-dark">Register</button>
